@@ -7,6 +7,7 @@ get_template_part("template-parts/header");
 
 
 <div role="main" class="main">
+
     	<div role="main" class="main">
             <section class="page-header page-header-modern bg-primary m-0 py-0">
                 <div class="container py-2">
@@ -20,19 +21,17 @@ get_template_part("template-parts/header");
                         <div class="col-md-12 align-self-center">
                             <ul class="breadcrumb breadcrumb-light d-block mb-4 text-center">
                                 <li><a href="#">Home</a></li>
-                                <li class="active">Location</li>
+                                <li class="active">Gallery</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            
-
-           
         </div>
             
-        <?php get_template_part("template-parts/sub-footer") ?>
-    </div>
+
+    <?php get_template_part("template-parts/sub-footer") ?>
+</div>
 
 
 

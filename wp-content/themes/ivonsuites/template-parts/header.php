@@ -84,10 +84,16 @@
 															Rooms 
 														</a>
 													</li>
+													<li>
+														<a class="nav-link font-weight-bold" href="<?php echo get_permalink( get_page_by_path("gallery") ) ?>">
+															Gallery 
+														</a>
+													</li>
 													
 													<li>
 														<a class="nav-link font-weight-bold" href="<?php echo get_permalink( get_page_by_path("contact-us") ) ?>">
 															Contact Us
+														</a>
 													</li>
 													
 												</ul>
