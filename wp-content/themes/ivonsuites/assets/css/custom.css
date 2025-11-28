@@ -1,0 +1,27 @@
+.slider-container {
+    position: relative;
+}
+
+.slider-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Higher than slides */
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.slider-text-overlay .room-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.slider-text-overlay .room-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
