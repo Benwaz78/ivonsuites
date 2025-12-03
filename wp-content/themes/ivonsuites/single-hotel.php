@@ -95,7 +95,10 @@ if (!empty($gallery)) {
         <!-- 🔥 Static Overlay Text -->
         <div class="slider-text-overlay">
             <h1 class="room-title"><?php echo esc_html($title); ?></h1>
+            <a href="#moreImages" class="mt-5 slider-scroll-button position-absolute top-30 left-50pct transform3dx-n50" data-hash="" data-hash-offset="0" data-hash-offset-lg="80">View the rooms</a>
+
         </div>
+
 
 
       </div>
@@ -262,7 +265,7 @@ if (!empty($gallery)) {
 		</div>
 <?php echo get_template_part("template-parts/hotel-video") ?>
 
-<section class="bg-dark py-5">
+<section id="moreImages" class="bg-dark py-5">
     <div class="container container-xl-custom">
         <h3 class="mb-0 pb-0 text-white">Different Views</h3>
         <div class="divider divider-primary divider-small">
