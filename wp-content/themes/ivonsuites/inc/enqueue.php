@@ -1,10 +1,19 @@
 <?php
 
+function hm_enable_thumbnails() {
+    add_theme_support('post-thumbnails');
+}
+
+function ivon_theme_setup() {
+    add_theme_support('title-tag');
+}
+
+
 
 function ivonsuites_add_favicons() {
     $assets = get_template_directory_uri() . '/assets/img/';
     ?>
-    <link rel="shortcut icon" href="<?php echo $assets; ?>favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo $assets; ?>favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="<?php echo $assets; ?>apple-touch-icon.png" />
     <?php
 }
@@ -88,6 +97,9 @@ function ivonsuites_enqueue_scripts() {
 
 
 
+
+add_action('after_setup_theme', 'ivon_theme_setup');
+add_action('after_setup_theme', 'hm_enable_thumbnails');
 add_action('wp_head', 'ivonsuites_add_favicons');
 add_action('wp_enqueue_scripts', 'ivonsuites_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'ivonsuites_enqueue_styles');

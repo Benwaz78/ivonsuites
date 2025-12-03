@@ -6,13 +6,20 @@
             <div class="col-lg-6 pt-4 pb-3 py-lg-0">
                 <ul class="nav justify-content-center justify-content-lg-start">
                     <li class="nav-item pe-4">
-                        <a class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" href="#">Hotel</a>
+                        <a 
+                        class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" 
+                        href="<?php echo get_permalink( get_page_by_path("about-us") ) ?>">
+                        About</a>
                     </li>
                     <li class="nav-item pe-4">
-                        <a class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" href="#">Rooms & Rates</a>
+                        <a 
+                        class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" 
+                        href="<?php echo get_post_type_archive_link('hotel'); ?>">Rooms & Rates</a>
                     </li>
                     <li class="nav-item pe-4">
-                        <a class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" href="#">Contact</a>
+                        <a 
+                        class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" 
+                        href="<?php echo get_permalink( get_page_by_path("contact-us") ) ?>">Contact</a>
                     </li>
                 </ul>
             </div>

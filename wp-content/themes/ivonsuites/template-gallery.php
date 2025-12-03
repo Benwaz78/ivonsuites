@@ -13,7 +13,7 @@ get_template_part("template-parts/header");
                 <div class="container py-2">
                     <div class="row py-3">
                         <div class="col-md-12 align-self-center p-static text-center">
-                            <h1 class="text-light mt-4 mb-0 pb-0 font-weight-bold text-8">Location</h1>
+                            <h1 class="text-light mt-4 mb-0 pb-0 font-weight-bold text-8">Gallery</h1>
                             <div class="divider divider-light divider-small my-3 text-center">
                                 <hr class="mt-2 mx-auto">
                             </div>								
@@ -27,6 +27,10 @@ get_template_part("template-parts/header");
                     </div>
                 </div>
             </section>
+            <?php echo get_template_part("template-parts/hotel-video") ?>
+            <?php get_template_part("template-parts/gallery-parts") ?>
+
+
         </div>
             
 
