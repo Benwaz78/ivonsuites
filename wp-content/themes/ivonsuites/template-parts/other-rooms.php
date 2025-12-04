@@ -14,7 +14,7 @@ $other_rooms = new WP_Query($args);
 if ($other_rooms->have_posts()) : ?>
 <section class="py-5 bg-grey">
     <div class="container">
-        <h3 class="mb-0 pb-0">Other Rooms</h3>
+        <h3 class="mb-0 pb-0">Other Apartments</h3>
 
         <div class="divider divider-primary divider-small my-3">
             <hr class="mt-2 me-auto">
