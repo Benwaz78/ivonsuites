@@ -35,7 +35,7 @@
                                 <h4>Ivon Apartment</h4>
                                 <label class="opacity-7 d-block text-2">ADDRESS</label>
                                 <p class="text-dark text-3 font-weight-bold line-height-5 mb-4">
-                                   No  7, ekeolere off enugukwu street, Lakeview Estate, phase 2, Lagos <br> 
+                                   Ivon Apartment, No 7 ekeolere street, Lakeview estate Phase 2, Amuwo Odofin Lagos, Nigeria. <br> 
                                    <a class="font-weight-bold text-color-primary text-color-hover-secondary text-uppercase mt-2 text-1" href="#"><u>Get Directions</u></a>
                                 </p>
 

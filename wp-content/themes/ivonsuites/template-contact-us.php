@@ -35,7 +35,7 @@ get_template_part("template-parts/header");
                         <div class="row">
                             <div class="col-12 p-4 mt-4">
                                 <h3>Ivon Apartment Location</h3>
-                                <p class="p-0"><strong>Address: </strong> 7, ekeolere off enugukwu street, Lakeview Estate, phase 2, Lagos</p>
+                                <p class="p-0"><strong>Address: </strong> Ivon Apartment, No 7 ekeolere street, Lakeview estate Phase 2, Amuwo Odofin Lagos, Nigeria.</p>
                                 <p class="p-0"><strong>Phone: </strong> +234 913 669 4028</p>
                                 <p class="p-0"><strong>Email: </strong> ibe1.ifeke@gmail.com</p>
                             </div>
