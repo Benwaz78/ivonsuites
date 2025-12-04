@@ -45,7 +45,6 @@ get_template_part("template-parts/header");
     <?php echo get_template_part("template-parts/hotel-video") ?>
 
 
-   
 
     <?php get_template_part("template-parts/sub-footer") ?>
 
