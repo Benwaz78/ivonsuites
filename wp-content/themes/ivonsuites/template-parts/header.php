@@ -89,7 +89,7 @@
 													<li> 
 														<a class="nav-link font-weight-bold <?php if (is_post_type_archive('hotel') || is_singular('hotel')) echo 'active'; ?>" 
 														  href="<?php echo get_post_type_archive_link('hotel'); ?>">
-															Apartments
+															Service Apartments
 														</a>
 													</li>
 													<li>

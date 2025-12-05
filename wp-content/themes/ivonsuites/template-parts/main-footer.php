@@ -14,7 +14,7 @@
                     <li class="nav-item pe-4">
                         <a 
                         class="nav-link p-0 text-2 text-uppercase font-weight-bold text-light" 
-                        href="<?php echo get_post_type_archive_link('hotel'); ?>">Rooms & Rates</a>
+                        href="<?php echo get_post_type_archive_link('hotel'); ?>">Service Apartments</a>
                     </li>
                     <li class="nav-item pe-4">
                         <a 
