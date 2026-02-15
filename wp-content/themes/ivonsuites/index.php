@@ -1,66 +1,73 @@
 <?php get_template_part("template-parts/header") ?>
 
 <div role="main" class="main">
-    <div class="slider-container bg-transparent rev_slider_wrapper" style="height: 530px;">
-        <div id="revolutionSlider" class="slider rev_slider manual" data-version="5.4.8">
-            <ul>
-                <li data-transition="boxfade">
+    <div class="video-wrapper">
+        <div 
+            class="video section section-video overlay overlay-show overlay-op-8" 
+            data-video-path="<?php echo get_template_directory_uri() ?>/assets/videos/ivon-video.mp4" 
+            data-plugin-video-background
+            data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%', 'overlay': true}"
+            style="height: 800px;">
+        </div>
 
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/demos/hotel/slides/slide-hotel-1.jpg"  
-                            alt=""
-                            data-bgposition="center bottom"
-                            data-bgfit="cover"
-                            data-bgrepeat="no-repeat"
-                            data-bgparallax="10"
-                            class="rev-slidebg"
-                            data-no-retina>
-                </li>
-                <li data-transition="boxfade">
-
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/demos/hotel/slides/slide-hotel-2.jpg"  
-                            alt=""
-                            data-bgposition="center bottom"
-                            data-bgfit="cover"
-                            data-bgrepeat="no-repeat"
-                            data-bgparallax="10"
-                            class="rev-slidebg"
-                            data-no-retina>
-                </li>
-            </ul>
+        <!-- Overlay Text -->
+        <div class="video-overlay-text">
+            <h2 class="porto-big-title text-color-light font-weight-extra-bold mb-3" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 250, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">Ivon Apartment</h2>
+			<p class="text-4 text-color-light font-weight-light text-center mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">Experience Luxury & Comfort</p>
         </div>
     </div>
+
 
     <section class="section section-no-background section-no-border m-0">
         <div class="container">
             <div class="row">
+               
                 <div class="col-lg-6">
 
-                    <h3 class="mt-4 mb-0 pb-0">In the Heart of Porto</h3>
-                    <div class="divider divider-primary divider-small my-3">
-                        <hr class="mt-2 me-auto">
+                    <div class="micro-map box-shadow-custom my-4 clearfix">
+                        <div class="micro-map-map">
+                            <div id="googleMapsMicro" class="google-map m-0" style="height: 260px;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.291321922553!2d3.2973431740456527!3d6.484743023614467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8f3d5a8977e3%3A0x14c8f0c057dc6a16!2sIvon%20suites!5e0!3m2!1sen!2sng!4v1764505395689!5m2!1sen!2sng"  style="width:100%; height:310px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="micro-map-info">
+                            <div class="micro-map-info-detail">
+                                <h4>Ivon Apartment</h4>
+                                <label class="opacity-7 d-block text-2">ADDRESS</label>
+                                <p class="text-dark text-3 font-weight-bold line-height-5 mb-4">
+                                   Ivon Apartment, No 7 ekeolere street, Lakeview estate Phase 2, Amuwo Odofin Lagos, Nigeria. <br> 
+                                   <a class="font-weight-bold text-color-primary text-color-hover-secondary text-uppercase mt-2 text-1" href="#"><u>Get Directions</u></a>
+                                </p>
+
+                                <label class="opacity-7 d-block text-2">PHONE</label>
+                                <p class="text-dark text-4 font-weight-bold line-height-5 mb-1">+234 913 669 4028</p>
+                                 <label class="opacity-7 d-block text-2">Email</label>
+                                <p class="text-dark text-4 font-weight-bold line-height-5 mb-1">info@ivonsuites.com</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="lead font-weight-regular">Lorem ipsum dolor sit amet, <span class="highlight highlight-primary highlight-bg-opacity highlight-animated px-0" data-appear-animation="highlight-animated-start" data-appear-animation-delay="200" data-plugin-options="{'flagClassOnly': true}">nisi elit consequat ipsum</span> dolor sit amet. Lorem ipsum dolor sit amet.</p>
-
-                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum.</p>
-
-                    <a class="font-weight-bold text-2 text-decoration-none mt-2 mb-4" href="#">Learn More <i class="fas fa-angle-right p-relative top-1 ms-1"></i></a>
                 </div>
                 <div class="col-lg-6">
 
                     <div class="micro-map box-shadow-custom my-4 clearfix">
                         <div class="micro-map-map">
-                            <div id="googleMapsMicro" class="google-map m-0" style="height: 260px;"></div>
+                            <div id="googleMapsMicro" class="google-map m-0 bg-primary d-flex align-content-center justify-content-center" style="height: 330px">
+                                <h4 class="text-white w-75" style="margin-top: 120px;">Our Apartments in Golden Tulip</h4>
+                            </div>
                         </div>
                         <div class="micro-map-info">
                             <div class="micro-map-info-detail">
                                 <label class="opacity-7 d-block text-2">ADDRESS</label>
-                                <p class="text-dark text-3 font-weight-bold line-height-5 mb-4">1234 Street Name, Los Angeles / California - 91234 <br> <a class="font-weight-bold text-color-primary text-color-hover-secondary text-uppercase mt-2 text-1" href="#"><u>Get Directions</u></a></p>
+                                <p class="text-dark text-3 font-weight-bold line-height-5 mb-4">
+                                   Diamond Estate, Janet Fajemigbesin St, off Festac Link Bridge, Amuwo Odofin Estate, Lagos 102102, Lagos <br> 
+                                   <a class="font-weight-bold text-color-primary text-color-hover-secondary text-uppercase mt-2 text-1" href="#"><u>Get Directions</u></a>
+                                </p>
 
                                 <label class="opacity-7 d-block text-2">PHONE</label>
-                                <p class="text-dark text-4 font-weight-bold line-height-5 mb-1">(800) 123-4567</p>
-                                <p class="text-dark text-3 font-weight-bold line-height-5 mb-0">(800) 123-4568</p>
-                                <p class="text-dark text-3 font-weight-bold line-height-5 mb-0">(800) 123-4569</p>
+                                <p class="text-dark text-4 font-weight-bold line-height-5 mb-1">+234 913 669 4028</p>
+                                <label class="opacity-7 d-block text-2">Email</label>
+                                <p class="text-dark text-4 font-weight-bold line-height-5 mb-1">info@ivonsuites.com</p>
                             </div>
                         </div>
                     </div>
@@ -71,24 +78,39 @@
         </div>
     </section>
 
-    <section class="section section-parallax section-height-3 overlay overlay-show overlay-op-5 border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-plugin-parallax data-plugin-options="{'speed': 1.1, 'parallaxHeight': '200%'}" data-image-src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/backgrounds/background-1.jpg">
+    <?php echo get_template_part("template-parts/hotel-video") ?>
+    
+    <section class="bg-grey py-4">
         <div class="container">
+            <h3 class="mt-4 pt-1 mb-0 pb-0">Our Apartments</h3>
+            <div class="col-md-12 text-left pt-3 text-dark align-self-center">
+                Choose between our serene Ivon Apartments and premium Golden Tulip Apartments, each equipped with modern amenities for your comfort. Select your location and find the perfect stay.
+            </div>
+            <div class="divider divider-primary divider-small">
+                <hr class="mt-2 me-auto">
+            </div>
             <div class="row">
-                <div class="col text-center">
 
-                    <h3 class="mt-4 mb-0 pb-0 text-color-light">Enjoy The Best Of Porto</h3>
-                    <div class="divider divider-primary divider-small my-3">
-                        <hr class="mt-2 m-auto">
+                <div class="col">
+
+                    <ul class="nav nav-pills nav-pills-center sort-source text-2 text-uppercase mb-4 mt-0" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+                        <li class="nav-item active" data-option-value="*"><a class="nav-link text-uppercase font-weight-bold text-3 active" href="#">Show All</a></li>
+                        <li class="nav-item" data-option-value=".ivon-apartments"><a class="nav-link text-uppercase font-weight-bold text-3" href="#">Ivon Apartments</a></li>
+                        <li class="nav-item" data-option-value=".golden-tulip-apartments"><a class="nav-link text-uppercase font-weight-bold text-3" href="#">Golden Tulip Apartments</a></li>
+                    </ul>
+
+                    <div class="sort-destination-loader sort-destination-loader-showing mb-0">
+                        <?php  get_template_part('template-parts/rooms/room', 'loop');  ?>
                     </div>
 
-                    <p class="lead font-weight-regular text-color-light opacity-7">Make your reservation right now with the best price!</p>
-
-                    <a href="#" class="btn btn-primary font-weight-bold text-uppercase px-5 py-3 mt-2 mb-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="350">Book Now</a>
-
                 </div>
+
             </div>
         </div>
+
     </section>
+    
+    
 
     <section class="section section-no-background section-no-border m-0">
         <div class="container">
@@ -97,10 +119,10 @@
 
                     <div class="owl-carousel owl-carousel-mini-dots owl-theme dots-inside box-shadow-custom mt-4" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}">
                         <div>
-                            <img alt="" class="img-fluid" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/gallery/gallery-1.jpg">
+                            <img alt="" class="img-fluid" src="<?php  echo get_template_directory_uri() ?>/assets/img/about/about-img1.jpg">
                         </div>
                         <div>
-                            <img alt="" class="img-fluid" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/gallery/gallery-2.jpg">
+                            <img alt="" class="img-fluid" src="<?php  echo get_template_directory_uri() ?>/assets/img/about/about-img2.jpg">
                         </div>
                     </div>
 
@@ -112,27 +134,32 @@
                         <hr class="mt-2 me-auto">
                     </div>
 
-                    <p class="mt-4 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut.</p>
+                    <p class="mt-4 mb-2">
+                        Ivon Apartments offers a blend of comfort, convenience, and a serene living experience across its premium locations. With five well-designed apartments located in Lakeview Estate Phase 2 and two beautifully furnished apartments in Golden Tulip, Ivon Apartments provides a perfect choice for both short and long-term stays.
+                    </p>
+                    <a href="<?php echo get_permalink( get_page_by_path("about-us") ) ?>" class="room-suite-info-book fw-bolder" title="Read More">View More</a>
 
                     <div class="row mt-4 pt-2">
                         <div class="col-lg-4">
                             <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
-                                <li><i class="fas fa-check"></i> 24 Rooms, 4 Luxury suites</li>
-                                <li><i class="fas fa-check"></i> Fitness center</li>
-                                <li><i class="fas fa-check"></i> Airport transporation</li>
+                                <li><i class="fas fa-check"></i> Kitchen</li>
+                                <li><i class="fas fa-check"></i> TV Set</li>
+                                <li><i class="fas fa-check"></i> Nice and Cozy Bed</li>
+                                <li><i class="fas fa-check"></i> Solar/Inverter</li>
                             </ul>
                         </div>
                         <div class="col-lg-4">
                             <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
-                                <li><i class="fas fa-check"></i> 24-Hour In-Room Dining</li>
                                 <li><i class="fas fa-check"></i> Cocktail Bar</li>
-                                <li><i class="fas fa-check"></i> Dog Friendly - Pets Stay Free</li>
+                                <li><i class="fas fa-check"></i> Bathroom with Toilet</li>
+                                <li><i class="fas fa-check"></i> Housekeeper</li>
+                                <li><i class="fas fa-check"></i> Generator</li>
                             </ul>
                         </div>
                         <div class="col-lg-4">
                             <ul class="list list-icons list-primary text-uppercase font-weight-bold text-color-dark text-2">
-                                <li><i class="fas fa-check"></i> Valet car service</li>
-                                <li><i class="fas fa-check"></i> Pool</li>
+                                <li><i class="fas fa-check"></i> Reception</li>
+                                <li><i class="fas fa-check"></i> Pool at Golden Tulip</li>
                                 <li><i class="fas fa-check"></i> Free Wi-Fi</li>
                             </ul>
                         </div>
@@ -144,140 +171,18 @@
         </div>
     </section>
 
-    <section class="section section-background section-height-5 overlay overlay-show overlay-op-5 border-0 m-0" style="background-image: url(img/demos/hotel/backgrounds/background-2.jpg); background-size: cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-
-                    <a class="text-decoration-none lightbox" href="https://vimeo.com/45830194" data-plugin-options="{'type':'iframe'}">
-                        <i class="fas fa-play featured-icon featured-icon-style-2 featured-icon-hover-effect-1 rounded-circle pulseAnim pulseAnimAnimated animation-infinite bg-primary right-4 top-0 m-0"></i>
-                    </a>
-
-                </div>
+    <section class="bg-grey py-5">
+        <div class="container container-xl-custom">
+            <h3 class="mb-0 pb-0">Gallery</h3>
+            <div class="divider divider-primary divider-small">
+                <hr class="mt-2 mb-5 me-auto">
             </div>
+            <?php get_template_part("template-parts/gallery-parts") ?>
+
         </div>
     </section>
 
-    <section class="section section-parallax bg-color-primary border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.1, 'parallaxHeight': '200%'}" data-image-src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/backgrounds/background-3.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="mt-4 mb-0 pb-0 text-light">Guest Reviews</h3>
-                    <div class="divider divider-light divider-small divider-small-center my-3">
-                        <hr class="mt-2">
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-2 px-3">
-                <div class="col px-5 mb-4 pb-2">
-
-                    <div class="owl-carousel owl-theme nav-style-1 nav-arrows-thin nav-outside nav-light nav-font-size-lg bg-light box-shadow-4 py-5 py-lg-0 mb-0" data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true}, '768': {'items': 1}, '992': {'items': 1, 'nav': true, 'dots': false}, '1200': {'items': 1, 'nav': true, 'dots': false}}, 'loop': true, 'autoHeight': true}">
-                        <div class="py-3 py-lg-5 px-lg-5">
-                            <div class="custom-testimonial-style-1 testimonial testimonial-style-2 testimonial-with-quotes testimonial-remove-right-quote px-0 px-md-4 mx-xl-3 my-3">
-                                <img width="56" height="56" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/icons/tripadvisor.svg" alt="Tripadvisor Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark', 'fadeIn': false}" />
-                                <blockquote class="pt-3 pb-2 px-0 px-md-3">
-                                    <p class="text-color-dark text-3-5 line-height-8 alternative-font-4 mb-0">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. </p>
-                                </blockquote>
-                                <p class="text-color-grey opacity-6">TRIP ADVISOR - NOV 2020</p>
-                                <div class="testimonial-author">
-                                    <strong class="font-weight-bold text-4 negative-ls-1">John Doe</strong>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-3 py-lg-5 px-lg-5">
-                            <div class="custom-testimonial-style-1 testimonial testimonial-style-2 testimonial-with-quotes testimonial-remove-right-quote px-0 px-md-4 mx-xl-3 my-3">
-                                <img width="56" height="56" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/icons/tripadvisor.svg" alt="Tripadvisor Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark', 'fadeIn': false}" />
-                                <blockquote class="pt-3 pb-2 px-0 px-md-3">
-                                    <p class="text-color-dark text-3-5 line-height-8 alternative-font-4 mb-0">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. </p>
-                                </blockquote>
-                                <p class="text-color-grey opacity-6">TRIP ADVISOR - NOV 2020</p>
-                                <div class="testimonial-author">
-                                    <strong class="font-weight-bold text-4 negative-ls-1">John Doe</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-no-background section-no-border m-0">
-        <div class="container">
-            <div class="row">
-                <div class="col my-3">
-
-                    <div class="text-center">
-                        <h3 class="mb-0 pb-0">Special Offers</h3>
-                        <div class="divider divider-primary divider-small divider-small-center my-3">
-                            <hr class="mt-2">
-                        </div>
-                    </div>
-
-                    <div class="row pt-2 pb-3">
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <article class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-                                <div class="card border-0 border-radius-0 box-shadow-1">
-                                    <div class="card-body p-3 z-index-1">
-                                        <a href="demo-hotel-book.html">
-                                            <img class="card-img-top border-radius-0 mb-2" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/blog/blog-1.jpg" alt="Card Image">
-                                        </a>
-                                        <div class="card-body p-0">
-                                            <h4 class="card-title text-5 font-weight-bold pb-1 mt-3 mb-2"><a class="text-color-dark text-decoration-none" href="demo-hotel-book.html">Free Room Upgrade</a></h4>
-                                            <p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
-                                            <a class="font-weight-bold text-uppercase text-2 text-decoration-none mt-2 mb-4" href="demo-hotel-book.html">Book Now <i class="fas fa-angle-right p-relative top-1 ms-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <article class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">
-                                <div class="card border-0 border-radius-0 box-shadow-1">
-                                    <div class="card-body p-3 z-index-1">
-                                        <a href="demo-hotel-book.html">
-                                            <img class="card-img-top border-radius-0 mb-2" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/blog/blog-2.jpg" alt="Card Image">
-                                        </a>
-                                        <div class="card-body p-0">
-                                            <h4 class="card-title text-5 font-weight-bold pb-1 mt-3 mb-2"><a class="text-color-dark text-decoration-none" href="demo-hotel-book.html">Summer Sale</a></h4>
-                                            <p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
-                                            <a class="font-weight-bold text-uppercase text-2 text-decoration-none mt-2 mb-4" href="demo-hotel-book.html">Book Now <i class="fas fa-angle-right p-relative top-1 ms-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <article class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                                <div class="card border-0 border-radius-0 box-shadow-1">
-                                    <div class="card-body p-3 z-index-1">
-                                        <a href="demo-hotel-book.html">
-                                            <img class="card-img-top border-radius-0 mb-2" src="<?php  echo get_template_directory_uri() ?>/assets/img/demos/hotel/blog/blog-3.jpg" alt="Card Image">
-                                        </a>
-                                        <div class="card-body p-0">
-                                            <h4 class="card-title text-5 font-weight-bold pb-1 mt-3 mb-2"><a class="text-color-dark text-decoration-none" href="demo-hotel-book.html">New Jacuzzi for Free</a></h4>
-                                            <p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
-                                            <a class="font-weight-bold text-uppercase text-2 text-decoration-none mt-2 mb-4" href="demo-hotel-book.html">Book Now <i class="fas fa-angle-right p-relative top-1 ms-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                    </div>
-
-                    <div class="text-center pt-2">
-                        <a href="demo-hotel-special-offers.html" class="btn btn-primary font-weight-bold text-uppercase px-5 py-3 mt-2 mb-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="500">View All</a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-   
+ 
 
     <?php get_template_part("template-parts/sub-footer") ?>
 

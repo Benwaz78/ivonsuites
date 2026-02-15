@@ -25,7 +25,7 @@
 												</div>
 												<div class="header-extra-info-text">
 													<label class="text-light opacity-7">CALL US</label>
-													<strong class="text-uppercase"><a href="tel:8001234567" class="text-light">(800) 123-4567</a></strong>
+													<strong class="text-uppercase"><a href="tel:8001234567" class="text-light">+234 913 669 4028</a></strong>
 												</div>
 											</li>
 											<li class="d-none d-md-inline-flex">
@@ -34,7 +34,11 @@
 												</div>
 												<div class="header-extra-info-text">
 													<label class="text-light opacity-7">ADDRESS</label>
-													<strong class="text-light">1234 Street Name, Los Angeles - CA<a class="font-weight-bold text-color-primary text-color-hover-secondary text-uppercase ms-2 text-1 p-relative bottom-1" href="#"><u>Get Directions</u></a></strong>
+													<strong class="text-light">
+														Lakeview Estate Phase 2
+														<a 
+														class="font-weight-bold text-color-primary text-color-hover-secondary text-uppercase ms-2 text-1 p-relative bottom-1" 
+														href="<?php echo get_permalink(get_page_by_path('contact-us')); ?>"><u>Get Directions</u></a></strong>
 												</div>
 											</li>
 										</ul>
@@ -58,7 +62,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="<?php echo esc_html(home_url("/")) ?>">
-											<img alt="Porto" width="122" height="50" src="<?php echo get_template_directory_uri()?>/assets/img/demos/hotel/logo.png">
+											<img alt="Porto" width="122" height="93" src="<?php echo get_template_directory_uri()?>/assets/img/logo.png">
 										</a>
 									</div>
 								</div>
@@ -70,28 +74,32 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li>
-														<a class="nav-link font-weight-bold active" href="<?php echo esc_html(home_url("/")) ?>">
+														<a class="nav-link font-weight-bold <?php if (is_front_page()) echo 'active'; ?>" 
+														href="<?php echo esc_html(home_url("/")) ?>">
 															Home
 														</a>
 													</li>
 													<li>
-														<a class="nav-link font-weight-bold" href="<?php echo get_permalink( get_page_by_path("about-us") ) ?>">
+														<a 
+														class="nav-link font-weight-bold <?php if (is_page('about-us')) echo 'active'; ?>" 
+														href="<?php echo get_permalink( get_page_by_path("about-us") ) ?>">
 															About Us
 														</a>
 													</li>
-													<li>
-														<a class="nav-link font-weight-bold" href="<?php echo get_permalink( get_page_by_path("rooms") ) ?>">
-															Rooms 
+													<li> 
+														<a class="nav-link font-weight-bold <?php if (is_post_type_archive('hotel') || is_singular('hotel')) echo 'active'; ?>" 
+														  href="<?php echo get_post_type_archive_link('hotel'); ?>">
+															Service Apartments
 														</a>
 													</li>
 													<li>
-														<a class="nav-link font-weight-bold" href="<?php echo get_permalink( get_page_by_path("gallery") ) ?>">
+														<a class="nav-link font-weight-bold <?php if (is_page('gallery')) echo 'active'; ?>" href="<?php echo get_permalink( get_page_by_path("gallery") ) ?>">
 															Gallery 
 														</a>
 													</li>
 													
 													<li>
-														<a class="nav-link font-weight-bold" href="<?php echo get_permalink( get_page_by_path("contact-us") ) ?>">
+														<a class="nav-link font-weight-bold <?php if (is_page('contact-us')) echo 'active'; ?>" href="<?php echo get_permalink( get_page_by_path("contact-us") ) ?>">
 															Contact Us
 														</a>
 													</li>
